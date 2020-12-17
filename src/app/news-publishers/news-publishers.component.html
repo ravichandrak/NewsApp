@@ -1,0 +1,19 @@
+<div class="row">
+    <p class="col-12">Total News Publishers : {{ publisherList.length }}</p>
+</div>
+
+<div class="row">
+    <div class='col-sm-4 mb-1' *ngFor="let publisher of publisherList">
+        <div class="card h-100">
+            <div class="card-header">
+                {{ publisher.name }}
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{ publisher.description }}</p>
+            </div>
+            <div class="card-footer">
+                <a href="{{ publisher.url}}" target="_blank" class="btn btn-primary">Go to website</a>
+            </div>
+        </div>
+    </div>
+</div>
